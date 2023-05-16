@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 
-export class NewsItem extends Component {
-  render() {
+const NewsItem=(props)=> { 
     let {
       title,
       description,
@@ -10,7 +9,7 @@ export class NewsItem extends Component {
       publishedAt,
       author,
       sourceName,
-    } = this.props;
+    } = props;
     return (
       <>
         <div className="card ">
@@ -38,8 +37,7 @@ export class NewsItem extends Component {
           </div>
         </div>
       </>
-    );
-  }
+    ); 
 }
 
 export default NewsItem;
